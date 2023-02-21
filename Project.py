@@ -29,7 +29,7 @@ add_bg_from_url()
 st.title('Model Deployment: Clustering')
 st.sidebar.header('Input Country listed')
 
-input = st.sidebar.selectbox("Select Country from list",('Norway','Saudi Arabia','India'))
+input = st.sidebar.selectbox("Select Country from list",('Norway','Saudi Arabia','India','Peru'))
 
 #Model Prediction - Deployment
 
