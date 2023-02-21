@@ -14,7 +14,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://www.gratex.in/products/info/ZA%20403.html");
+             background-image: url("https://www.marshallsindia.com/ImageBuckets/ItemImages/ZA%20403.jpg?id=75");
              background-attachment: fixed;
 	     background-position: 25% 75%;
              background-size: cover
