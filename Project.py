@@ -1,8 +1,6 @@
 import numpy as np
 import pandas as pd
-from matplotlib import pyplot as plt
 from sklearn.preprocessing import StandardScaler
-import seaborn as sns
 from fancyimpute import IterativeImputer
 from sklearn.cluster import Birch
 import statistics as sts
