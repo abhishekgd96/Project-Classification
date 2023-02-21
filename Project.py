@@ -16,7 +16,7 @@ def add_bg_from_url():
          .stApp {{
              background-image: url("https://www.marshallsindia.com/ImageBuckets/ItemImages/ZA%20403.jpg?id=75");
              background-attachment: fixed;
-	     background-position: 25% 75%;
+	     #background-position: 25% 75%;
              background-size: cover
          }}
          </style>
