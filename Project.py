@@ -29,22 +29,8 @@ add_bg_from_url()
 st.title('Model Deployment: Clustering')
 st.sidebar.header('Input Country listed')
 
-input = st.sidebar.selectbox("Select Country 1 from list",('NIFTY','BANKNIFTY','3MINDIA','AARTIDRUGS','AARTIIND','AAVAS','ABB','ABCAPITAL','ABFRL','ACC',
-							                                               'ACCELYA','ADANIENT','ADANIGAS','ADANIGREEN','ADANIPORTS','ADANIPOWER','ADANITRANS','ADVENZYMES',
-                                                             'AEGISCHEM','AFFLE','AHLUCONT','AIAENG','AJANTPHARM','AKZOINDIA','ALKEM','ALKYLAMINE','ALLCARGO',
-                                                             'AMARAJABAT','AMBER','AMBUJACEM','APARINDS','APLAPOLLO','APLLTD','APOLLOHOSP','APOLLOTYRE','ARVINDFASN',
-                                                             'ASAHIINDIA','ASHOKA','ASHOKLEY','ASIANPAINT','ASTERDM','ASTRAL','ASTRAZEN','ATUL','AUBANK','AUROPHARMA',
-                                                             'AVANTIFEED','AXISBANK','BAJAJ-AUTO','BAJAJCON','BAJAJELEC','BAJAJFINSV','BAJAJHLDNG','BAJFINANCE',
-                                                             'BALKRISIND','BALMLAWRIE','BALRAMCHIN','BANDHANBNK','BANKBARODA','BANKINDIA','BASF','BATAINDIA',
-                                                             'BBTC','BDL','BEL','BEML','BERGEPAINT','BHARATFORG','BHARATRAS','BHARTIARTL','BHEL','BIOCON',
-                                                             'BIRLACORPN','BLUEDART','BLUESTARCO','BOSCHLTD','BPCL','BRIGADE','BRITANNIA','BSE','BSOFT','CADILAHC',
-                                                             'CANBK','CANFINHOME','CAPLIPOINT','CARBORUNIV','CASTROLIND','CCL','CDSL','CEATLTD','CENTRALBK',
-                                                             'CENTURYPLY','CENTURYTEX','CERA','CESC','CGCL','CHALET','CHAMBLFERT','CHOLAFIN','CHOLAHLDNG','CIPLA',
-                                                             'COALINDIA','COCHINSHIP','COLPAL','CONCOR','COROMANDEL','CREDITACC','CRISIL','CROMPTON','CSBBANK',
-                                                             'CUB','CUMMINSIND','CYIENT','DABUR','DALBHARAT','DBCORP','DBL','DCBBANK','DCMSHRIRAM','DEEPAKNTR',
-                                                             'DELTACORP','DEN','DHANUKA','DIAMONDYD','DIVISLAB','DIXON','DLF','DMART','DRREDDY','ECLERX','EDELWEISS',
-                                                             'EICHERMOT','EIDPARRY','EIHOTEL','ELGIEQUIP','EMAMILTD','ENDURANCE','ENGINERSIN','EQUITAS','ERIS',
-							                                               'ESABINDIA','ESCORTS','ESSELPACK','EXIDEIND','FACT','FAIRCHEM','FCONSUMER','FDC','FEDERALBNK')
+input = st.sidebar.selectbox("Select Country 1 from list",('NIFTY','BANKNIFTY'))
+
 #Model Prediction - Deployment
 
 data = pd.read_csv("https://raw.githubusercontent.com/abhishekgd96/Project-Classification/main/World_development_mesurement.csv")
