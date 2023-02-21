@@ -5,6 +5,8 @@ from sklearn.preprocessing import StandardScaler
 import seaborn as sns
 from fancyimpute import IterativeImputer
 from sklearn.cluster import Birch
+import statistics as sts
+import streamlit as st
 
 input = 'Norway'
 
@@ -78,10 +80,9 @@ df_country =df[df['Country']==input]
 df_country = df_country.drop(["Country"], axis = 1)
 
 #Creating a BIRCH model 
-import statistics as st
 model = Birch(branching_factor = 50, n_clusters = 4, threshold = 1.5)
 model.fit(df_std)
 
 pred = model.predict(df_country)
-pred = st.mode(pred)
+pred = sts.mode(pred)
 pred
