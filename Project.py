@@ -29,7 +29,7 @@ add_bg_from_url()
 st.title('Model Deployment: Clustering')
 st.sidebar.header('Input Country listed')
 
-input = st.sidebar.selectbox("Select Country 1 from list",('NIFTY','BANKNIFTY'))
+input = st.sidebar.selectbox("Select Country from list",('NIFTY','BANKNIFTY'))
 
 #Model Prediction - Deployment
 
@@ -98,6 +98,8 @@ df['Country'] = data['Country']
 df = df[ ['Country'] + [ col for col in df.columns if col != 'Country' ] ]
 df_country =df[df['Country']==input]
 
+st.write(df_country)
+
 df_country = df_country.drop(["Country"], axis = 1)
 
 #Creating a BIRCH model 
@@ -106,4 +108,4 @@ model.fit(df_std)
 
 pred = model.predict(df_country)
 pred = sts.mode(pred)
-pred
+st.write(pred)
