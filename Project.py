@@ -14,7 +14,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://img.freepik.com/premium-vector/high-resolution-world-map-with-continent-different-color-high-detail-world-map_601298-77.jpg?w=826");
+             background-image: url("https://www.gratex.in/products/info/ZA%20403.html");
              background-attachment: fixed;
 	     background-position: 25% 75%;
              background-size: cover
