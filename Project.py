@@ -108,4 +108,4 @@ model.fit(df_std)
 
 pred = model.predict(df_country)
 pred = sts.mode(pred)
-st.write(pred)
+st.write('This country belongs to cluster number :',pred)
